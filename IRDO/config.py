@@ -4,8 +4,7 @@ from re import DEBUG
 
 class Config(object):
     SQLALCHEMY_DATABASE_URI = environ.get(
-        # 'IRDO_DATABASE_URL', 'sqlite:///database.sqlite3?check_same_thread=False'
-        'IRDO_DATABASE_URL', 'mysql://root:P@55w0rd.@localhost/api'
+        'IRDO_DATABASE_URL', 'sqlite:///database.sqlite3?check_same_thread=False' 
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DB_SERVER = '127.0.0.1'
